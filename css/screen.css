@@ -1,0 +1,26 @@
+.imageRotate {
+    position: relative;
+    overflow: hidden;
+    /* wrap floats */
+    width: 100%;
+    /* trips haslayout, so IE is wrapping floats too */
+    max-height: 50%;
+    margin: 0 auto;
+}
+.imageRotate img {
+    display: block;
+}
+.imageRotate .under {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+.imageRotate .hide {
+    display: none;
+}
+.imageRotate .show {
+    position: relative;
+    display: block;
+    z-index: -1;
+}
